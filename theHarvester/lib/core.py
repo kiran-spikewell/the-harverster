@@ -52,6 +52,10 @@ class Core:
         return Core.api_keys()["censys"]["id"], Core.api_keys()["censys"]["secret"]
 
     @staticmethod
+    def certsio_key() -> tuple:
+        return Core.api_keys()["certsio"]["key"]
+
+    @staticmethod
     def criminalip_key() -> str:
         return Core.api_keys()["criminalip"]["key"]
 
@@ -174,6 +178,7 @@ class Core:
             "certspotter",
             "criminalip",
             "crtsh",
+            "certsio",
             "dnsdumpster",
             "duckduckgo",
             "fullhunt",
